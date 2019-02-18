@@ -1587,3 +1587,4 @@
 /.htaccess.sample
 vendor
 app/etc/local.xml
+media

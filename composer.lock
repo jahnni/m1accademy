@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f4639673804802ef8eb9cc26d30566e",
+    "content-hash": "74cc30c0b22dcc18656cfeb263c27a90",
     "packages": [
         {
             "name": "aydin-hassan/magento-core-composer-installer",
@@ -590,6 +590,23 @@
                 "shim"
             ],
             "time": "2018-09-21T13:07:52+00:00"
+        },
+        {
+            "name": "tbd_ecommerce/mod_hwg_attributemanager",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:tbd_ecommerce/mod_hwg_attributemanager.git",
+                "reference": "f886173b10cbf36fbf0cd822e56ce23139672f86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.public.triboo.it/dist/tbd_ecommerce/mod_hwg_attributemanager/tbd_ecommerce-mod_hwg_attributemanager-v2.0.0-df74c2.zip",
+                "reference": "f886173b10cbf36fbf0cd822e56ce23139672f86",
+                "shasum": "438192291b9dbada07f04f2e4a4fff9ca7087321"
+            },
+            "type": "magento-module",
+            "time": "2017-12-13T11:18:34+00:00"
         }
     ],
     "packages-dev": [],

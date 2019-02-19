@@ -3,9 +3,17 @@
         "colinmollenhour/modman": "^1.12",
         "magento-hackathon/magento-composer-installer": "^3.2",
         "aydin-hassan/magento-core-composer-installer": "^1.5",
-        "firegento/magento": "^1.9"
+        "firegento/magento": "^1.9",
+        "tbd_ecommerce/mod_hwg_attributemanager": "^2.0"
     },
     "extra": {
-        "magento-root-dir": "."
+        "magento-root-dir": ".",
+        "magento-deploystrategy": "copy"
+    },
+    "repositories": {
+        "triboo": {
+            "type": "composer",
+            "url": "https://satis.public.triboo.it"
+        }
     }
 }

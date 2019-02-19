@@ -1,0 +1,17 @@
+<config>
+    <modules>
+        <Triboo_Myfirstmodule>
+            <version>0.0.1</version>
+        </Triboo_Myfirstmodule>
+    </modules>
+    <global>
+        <resources>
+            <triboo_firstmodule_setup>
+                <setup>
+                    <module>Triboo_Myfirstmodule</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+            </triboo_firstmodule_setup>
+        </resources>
+    </global>
+</config>

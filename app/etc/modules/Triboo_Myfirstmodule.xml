@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Triboo_Myfirstmodule>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Triboo_Myfirstmodule>
+    </modules>
+</config>

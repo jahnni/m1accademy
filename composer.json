@@ -1,0 +1,11 @@
+{
+    "require": {
+        "colinmollenhour/modman": "^1.12",
+        "magento-hackathon/magento-composer-installer": "^3.2",
+        "aydin-hassan/magento-core-composer-installer": "^1.5",
+        "firegento/magento": "^1.9"
+    },
+    "extra": {
+        "magento-root-dir": "."
+    }
+}

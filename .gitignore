@@ -1589,3 +1589,8 @@ vendor
 .idea
 media
 app/etc/local.xml
+var
+app/code/community/Hwg/Attributemanager
+app/design/adminhtml/default/default/template/attributemanager
+app/design/adminhtml/default/default/layout/attributemanager.xml
+app/etc/modules/Hwg_Attributemanager.xml

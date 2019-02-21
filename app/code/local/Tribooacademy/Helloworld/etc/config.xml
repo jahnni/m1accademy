@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tribooacademy_Helloworld>
+            <version>0.1.0</version>
+        </Tribooacademy_Helloworld>
+    </modules>
+    <global>
+        <models>
+            <tribooacademy_helloworld>
+                <class>Tribooacademy_Helloworld_Model</class>
+                <resourceModel>tribooacademy_helloworld_resource</resourceModel>
+            </tribooacademy_helloworld>
+            <tribooacademy_helloworld_resource>
+                <class>Tribooacademy_Helloworld_Model_Resource</class>
+            </tribooacademy_helloworld_resource>
+        </models>
+        <blocks>
+            <tribooacademy_helloworld>
+                <class>Tribooacademy_Helloworld_Block</class>
+            </tribooacademy_helloworld>
+        </blocks>
+        <helpers>
+            <tribooacademy_helloworld>
+                <class>Tribooacademy_Helloworld_Helper</class>
+            </tribooacademy_helloworld>
+        </helpers>
+    </global>
+</config>

@@ -1,0 +1,7 @@
+<layout version="0.1.0">
+    <academy_helloworld_index>
+        <reference name="content">
+            <block type="core/template" name="stocazzo" as="stocazzo" template="academy/hello.phtml"/>
+        </reference>
+    </academy_helloworld_index>
+</layout>

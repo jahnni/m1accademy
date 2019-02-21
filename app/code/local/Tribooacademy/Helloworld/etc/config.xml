@@ -7,23 +7,41 @@
     </modules>
     <global>
         <models>
-            <tribooacademy_helloworld>
+            <academy>
                 <class>Tribooacademy_Helloworld_Model</class>
-                <resourceModel>tribooacademy_helloworld_resource</resourceModel>
-            </tribooacademy_helloworld>
-            <tribooacademy_helloworld_resource>
+                <resourceModel>academy_resource</resourceModel>
+            </academy>
+            <academy_resource>
                 <class>Tribooacademy_Helloworld_Model_Resource</class>
-            </tribooacademy_helloworld_resource>
+            </academy_resource>
         </models>
         <blocks>
-            <tribooacademy_helloworld>
+            <academy>
                 <class>Tribooacademy_Helloworld_Block</class>
-            </tribooacademy_helloworld>
+            </academy>
         </blocks>
         <helpers>
-            <tribooacademy_helloworld>
+            <academy>
                 <class>Tribooacademy_Helloworld_Helper</class>
-            </tribooacademy_helloworld>
+            </academy>
         </helpers>
     </global>
+    <frontend>
+        <routers>
+            <academy>
+                <use>standard</use>
+                <args>
+                    <frontName>tribooacademy</frontName>
+                    <module>Tribooacademy_Helloworld</module>
+                </args>
+            </academy>
+        </routers>
+        <layout>
+            <updates>
+                <academy>
+                    <file>academy.xml</file>
+                </academy>
+            </updates>
+        </layout>
+    </frontend>
 </config>

@@ -1,7 +1,24 @@
+<?xml version="1.0"?>
 <layout version="0.1.0">
     <academy_helloworld_index>
         <reference name="content">
-            <block type="core/template" name="stocazzo" as="stocazzo" template="academy/hello.phtml"/>
+            <block type="academy/hello" name="hello" template="academy/hello.phtml">
+                <action method="setData">
+                    <key>secret</key>
+                    <value>Hello again</value>
+                </action>
+            </block>
+            <block type="cms/block" name="my.static.block">
+                <action method="setBlockId"><block_id>my-static-block</block_id></action>
+            </block>
         </reference>
     </academy_helloworld_index>
+    <academy_helloworld_to>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="academy/to" name="hello" template="academy/to.phtml"/>
+        </reference>
+    </academy_helloworld_to>
 </layout>

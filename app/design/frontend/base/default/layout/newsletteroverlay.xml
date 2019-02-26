@@ -1,0 +1,16 @@
+<layout version="0.1.0">
+    <cms_index_index>
+        <reference name="content">
+            <block type="newsletteroverlay/overlay" name="newsletter.overlay"
+                   template="newsletteroverlay/overlay.phtml">
+                <block type="newsletter/subscribe" name="newsletter.overlay.subscribe"
+                       template="newsletter/subscribe.phtml"/>
+                <block type="cms/block" name="newsletter.overlay.privacy">
+                    <action method="setBlockId">
+                        <blockId>newsletter_overlay_privacy</blockId>
+                    </action>
+                </block>
+            </block>
+        </reference>
+    </cms_index_index>
+</layout>

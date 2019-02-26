@@ -1,0 +1,112 @@
+<?php
+/** @var $this Tribooacademy_Newsletteroverlay_Block_Overlay */
+?>
+<div class="modale" id="newsletter-overlay-modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <a href="#" class="btn-close closemodale" aria-hidden="true">&times;</a>
+        </div>
+        <div class="modal-body">
+            <?php echo $this->getChildHtml('newsletter.overlay.subscribe') ?>
+            <input id="newsletter-overlay-checkbox" type="checkbox" name="overlay_privacy_checkbox" value="1"/>
+            <?php echo $this->getChildHtml('newsletter.overlay.privacy') ?>
+        </div>
+    </div>
+</div>
+
+<style>
+    .modale .btn-close {
+        color: #aaaaaa;
+        font-size: 20px;
+        text-decoration: none;
+        padding:10px;
+        position: absolute;
+        right: 7px;
+        top: 0;
+    }
+    .modale .btn-close:hover {
+        color: #919191;
+    }
+    .modale:before {
+        content: "";
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+    }
+    .modale.opened:before {
+        display: block;
+    }
+    .modale.opened .modal-dialog {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        top: 20%;
+    }
+    .modal-dialog {
+        background: #fefefe;
+        border: #333333 solid 0px;
+        border-radius: 5px;
+        margin-left: -200px;
+        text-align:center;
+        position: fixed;
+        left: 50%;
+        top: -100%;
+        z-index: 1001;
+        width: 360px;
+        box-shadow:0 5px 10px rgba(0,0,0,0.3);
+        -webkit-transform: translate(0, -500%);
+        -ms-transform: translate(0, -500%);
+        transform: translate(0, -500%);
+        -webkit-transition: -webkit-transform 0.3s ease-out;
+        -moz-transition: -moz-transform 0.3s ease-out;
+        -o-transition: -o-transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+    }
+    .modal-body {
+        padding: 20px;
+    }
+    .modal-header {
+        height:20px;
+    }
+</style>
+
+<script>
+        var newsletterOvelayCookieName = 'nlo';
+
+        function openNewsletterModal() {
+            document.getElementById('newsletter-overlay-modal').classList.add('opened');
+        }
+
+        function closeNewsletterModal() {
+            document.getElementById('newsletter-overlay-modal').classList.remove('opened');
+            // Create a 60 days expiry date
+            var expiryDate = new Date();
+            expiryDate.setDate(expiryDate.getDate() + 60);
+            Mage.Cookies.set(newsletterOvelayCookieName,true,expiryDate);
+        }
+
+        if(!Mage.Cookies.get(newsletterOvelayCookieName)) {
+            setTimeout(function() {
+                openNewsletterModal();
+            },1000);
+        }
+
+        document.querySelector('#newsletter-overlay-modal .btn-close').addEventListener('click', function(event) {
+            event.preventDefault();
+            closeNewsletterModal();
+        });
+
+        document.querySelector('#newsletter-overlay-modal .button').addEventListener('click', function(event) {
+            event.preventDefault();
+            if(document.getElementById('newsletter-overlay-checkbox').checked) {
+                closeNewsletterModal();
+                document.querySelector('#newsletter-overlay-modal form').submit();
+            }
+        });
+
+</script>

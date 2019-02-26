@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<widgets>
+    <academy_widget_demo type="academy/widget_demo">
+        <name>Triboo Academy Demo Widget</name>
+        <description>An awesome widget for all!!</description>
+        <parameters>
+            <text_to_print translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Testo da stampare</label>
+                <description>Il testo da ripetere</description>
+                <type>text</type>
+            </text_to_print>
+            <is_repeat translate="label">
+                <visible>1</visible>
+                <label>Da ripetere?</label>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+            </is_repeat>
+            <times_to_repeat translate="label">
+                <required>0</required>
+                <visible>1</visible>
+                <value>1</value>
+                <label>Numero di volte da ripetere</label>
+                <type>text</type>
+                <depends>
+                    <is_repeat>
+                        <value>1</value>
+                    </is_repeat>
+                </depends>
+            </times_to_repeat>
+            <template translate="label">
+                <label>Template</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>academy/widget/demo1.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>academy/widget/demo1.phtml</value>
+                        <label>Template v1</label>
+                    </default>
+                    <v2 translate="label">
+                        <value>academy/widget/demo2.phtml</value>
+                        <label>Template v2</label>
+                    </v2>
+                </values>
+            </template>
+        </parameters>
+    </academy_widget_demo>
+</widgets>

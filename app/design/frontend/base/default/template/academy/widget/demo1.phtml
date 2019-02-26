@@ -1,0 +1,19 @@
+<?php
+/**
+ * @var $this Tribooacademy_Helloworld_Block_Widget_Demo
+ */
+$text_to_print = $this->getData('text_to_print');
+$is_repeat = $this->getData('is_repeat');
+if($is_repeat) {
+    $times_to_repeat = $this->getData('times_to_repeat');
+} else {
+    $times_to_repeat = 1;
+}
+
+?>
+
+<?php for($i = 0; $i < $times_to_repeat; $i ++): ?>
+<div class="my-html">
+    <h1><?php echo $text_to_print?></h1>
+</div>
+<?php endfor; ?>

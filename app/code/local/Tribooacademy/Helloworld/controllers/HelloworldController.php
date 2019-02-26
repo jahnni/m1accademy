@@ -13,8 +13,13 @@ class Tribooacademy_Helloworld_HelloworldController extends Mage_Core_Controller
     }
 
     public function toAction() {
+        $to = $this->getRequest()->getParam('id',null);
+        Mage::register('triboo_helloworld_to',$to);
+
         $this->loadLayout();
         $this->renderLayout();
+
+        Mage::unregister('triboo_helloworld_to');
     }
 
 

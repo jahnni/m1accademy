@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f4639673804802ef8eb9cc26d30566e",
+    "content-hash": "25895f2495dab3159928326df4528d39",
     "packages": [
         {
             "name": "aydin-hassan/magento-core-composer-installer",
@@ -590,6 +590,82 @@
                 "shim"
             ],
             "time": "2018-09-21T13:07:52+00:00"
+        },
+        {
+            "name": "tbd_ecommerce/mod_tbuy_ax",
+            "version": "v9.0.36",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:tbd_ecommerce/mod_tbuy_ax.git",
+                "reference": "c54fe93bbeada83e72b4c826245e288a4c0dad78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.public.triboo.it/dist/tbd_ecommerce/mod_tbuy_ax/tbd_ecommerce-mod_tbuy_ax-v9.0.36-018cea.zip",
+                "reference": "c54fe93bbeada83e72b4c826245e288a4c0dad78",
+                "shasum": "09e78e8a23ceb2daa6f8e6cc953bdcbe4b97b878"
+            },
+            "require": {
+                "tbd_ecommerce/mod_tbuy_flow": "*"
+            },
+            "type": "magento-module",
+            "time": "2018-08-27T08:42:36+00:00"
+        },
+        {
+            "name": "tbd_ecommerce/mod_tbuy_flow",
+            "version": "v0.7.2",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:tbd_ecommerce/mod_tbuy_flow.git",
+                "reference": "9100c17ed1351538be2e03770f434bce39b3966f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.public.triboo.it/dist/tbd_ecommerce/mod_tbuy_flow/tbd_ecommerce-mod_tbuy_flow-v0.7.2-180518.zip",
+                "reference": "9100c17ed1351538be2e03770f434bce39b3966f",
+                "shasum": "798c6b743f3e6caf559f349bb39740b548013cc5"
+            },
+            "require": {
+                "tbd_ecommerce/mod_tbuy_logger": "^1.0"
+            },
+            "type": "magento-module",
+            "time": "2019-02-26T12:36:27+00:00"
+        },
+        {
+            "name": "tbd_ecommerce/mod_tbuy_logger",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:tbd_ecommerce/mod_tbuy_logger.git",
+                "reference": "2f997945ddd8a00139c680d53477dfcc2bdab4a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.public.triboo.it/dist/tbd_ecommerce/mod_tbuy_logger/tbd_ecommerce-mod_tbuy_logger-v1.0.0-15a45d.zip",
+                "reference": "2f997945ddd8a00139c680d53477dfcc2bdab4a7",
+                "shasum": "6808c35dfede0a80ebce981066819f3813b73861"
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*",
+                "php": ">=5.4"
+            },
+            "type": "magento-module",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandr Ilin",
+                    "email": "alex.ilin@triboo.it"
+                },
+                {
+                    "name": "Sergey Kulpeksha",
+                    "email": "sergey.kulpeksha@triboo.it"
+                }
+            ],
+            "description": "This module provides abstract class of PSR-3 compatible logger.",
+            "homepage": "http://www.triboo.it",
+            "time": "2018-05-03T12:35:54+00:00"
         }
     ],
     "packages-dev": [],

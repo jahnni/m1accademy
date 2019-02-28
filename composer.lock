@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "25895f2495dab3159928326df4528d39",
+    "content-hash": "07f40563b19d889bcf921641e5b880c4",
     "packages": [
         {
             "name": "aydin-hassan/magento-core-composer-installer",
@@ -593,23 +593,23 @@
         },
         {
             "name": "tbd_ecommerce/mod_tbuy_ax",
-            "version": "v9.0.36",
+            "version": "v9.0.37",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:tbd_ecommerce/mod_tbuy_ax.git",
-                "reference": "c54fe93bbeada83e72b4c826245e288a4c0dad78"
+                "reference": "e611976189b010f82dc377062610784c5e68fb92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.public.triboo.it/dist/tbd_ecommerce/mod_tbuy_ax/tbd_ecommerce-mod_tbuy_ax-v9.0.36-018cea.zip",
-                "reference": "c54fe93bbeada83e72b4c826245e288a4c0dad78",
-                "shasum": "09e78e8a23ceb2daa6f8e6cc953bdcbe4b97b878"
+                "url": "https://satis.public.triboo.it/dist/tbd_ecommerce/mod_tbuy_ax/tbd_ecommerce-mod_tbuy_ax-v9.0.37-07a7d5.zip",
+                "reference": "e611976189b010f82dc377062610784c5e68fb92",
+                "shasum": "79abad0657863ab1cc8a2999cafd58b46bf8ec33"
             },
             "require": {
                 "tbd_ecommerce/mod_tbuy_flow": "*"
             },
             "type": "magento-module",
-            "time": "2018-08-27T08:42:36+00:00"
+            "time": "2019-02-28T17:29:26+00:00"
         },
         {
             "name": "tbd_ecommerce/mod_tbuy_flow",
@@ -666,6 +666,23 @@
             "description": "This module provides abstract class of PSR-3 compatible logger.",
             "homepage": "http://www.triboo.it",
             "time": "2018-05-03T12:35:54+00:00"
+        },
+        {
+            "name": "tbd_ecommerce/mod_tbuy_utils",
+            "version": "v2.5.6",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:tbd_ecommerce/mod_tbuy_utils.git",
+                "reference": "5b28d7907b4aa73f235c3b60639b7dee478e3f7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.public.triboo.it/dist/tbd_ecommerce/mod_tbuy_utils/tbd_ecommerce-mod_tbuy_utils-v2.5.6-ec8693.zip",
+                "reference": "5b28d7907b4aa73f235c3b60639b7dee478e3f7c",
+                "shasum": "9d67799c3c8a127d18b424b2db84017a4a3e3590"
+            },
+            "type": "magento-module",
+            "time": "2019-01-31T15:56:58+00:00"
         }
     ],
     "packages-dev": [],

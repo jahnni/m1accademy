@@ -6,7 +6,8 @@
         "firegento/magento": "^1.9",
         "tbd_ecommerce/mod_tbuy_flow": "^0.7.2",
         "tbd_ecommerce/mod_tbuy_ax": "^9.0",
-        "tbd_ecommerce/mod_tbuy_utils": "^2.5"
+        "tbd_ecommerce/mod_tbuy_utils": "^2.5",
+        "tbd_ecommerce/mod_tbuy_argo": "^0.2.10"
     },
     "extra": {
         "magento-force": true,

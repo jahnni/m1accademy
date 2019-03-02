@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "07f40563b19d889bcf921641e5b880c4",
+    "content-hash": "90850e735bc80efe7729f454ff2d3380",
     "packages": [
         {
             "name": "aydin-hassan/magento-core-composer-installer",
@@ -590,6 +590,26 @@
                 "shim"
             ],
             "time": "2018-09-21T13:07:52+00:00"
+        },
+        {
+            "name": "tbd_ecommerce/mod_tbuy_argo",
+            "version": "v0.2.10",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:tbd_ecommerce/mod_tbuy_argo.git",
+                "reference": "c006dabad8620cf3e1b9229ec813f3ca257622ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.public.triboo.it/dist/tbd_ecommerce/mod_tbuy_argo/tbd_ecommerce-mod_tbuy_argo-v0.2.10-e06d10.zip",
+                "reference": "c006dabad8620cf3e1b9229ec813f3ca257622ba",
+                "shasum": "0db79de9879b6e54ac5a048cf19e49a41cfba7bb"
+            },
+            "require": {
+                "tbd_ecommerce/mod_tbuy_flow": "*"
+            },
+            "type": "magento-module",
+            "time": "2018-11-29T10:52:17+00:00"
         },
         {
             "name": "tbd_ecommerce/mod_tbuy_ax",

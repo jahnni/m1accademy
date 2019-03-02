@@ -1577,7 +1577,7 @@
 /shell/.htaccess
 /shell/indexer.php
 /shell/compiler.php
-/media/xmlconnect/system/ok.gif
+/media/xmlconnect/system/ok.gif••••••••••••
 /media/xmlconnect/custom/ok.gif
 /media/xmlconnect/original/ok.gif
 /media/customer/.htaccess
@@ -1628,3 +1628,5 @@ skin/adminhtml/default/default/images/widget/utils__widget_slider.gif
 skin/adminhtml/default/default/images/widget/utils__widget_video.gif
 shell/tbuyutils/validate_vat.php
 app/design/adminhtml/default/default/layout/utils/widgetimagechooser.xml
+app/code/local/Tbuy/Argo
+app/etc/modules/Tbuy_Argo.xml

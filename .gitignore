@@ -1630,3 +1630,4 @@ shell/tbuyutils/validate_vat.php
 app/design/adminhtml/default/default/layout/utils/widgetimagechooser.xml
 app/code/local/Tbuy/Argo
 app/etc/modules/Tbuy_Argo.xml
+scheduler_cron.sh

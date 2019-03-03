@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Triboo_Sales>
+            <version>0.1.0</version>
+        </Triboo_Sales>
+    </modules>
+    <global>
+        <models>
+            <triboo_sales>
+                <class>Triboo_Sales_Model</class>
+                <resourceModel>triboo_sales_resource</resourceModel>
+            </triboo_sales>
+            <triboo_sales_resource>
+                <class>Triboo_Sales_Model_Resource</class>
+            </triboo_sales_resource>
+        </models>
+        <blocks>
+            <triboo_sales>
+                <class>Triboo_Sales_Block</class>
+            </triboo_sales>
+        </blocks>
+        <helpers>
+            <triboo_sales>
+                <class>Triboo_Sales_Helper</class>
+            </triboo_sales>
+        </helpers>
+        <resources>
+            <triboo_sales_setup>
+                <setup>
+                    <module>Triboo_Sales</module>
+                </setup>
+            </triboo_sales_setup>
+        </resources>
+    </global>
+</config>

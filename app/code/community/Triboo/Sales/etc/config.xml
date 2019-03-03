@@ -13,6 +13,11 @@
             </triboo_sales>
             <triboo_sales_resource>
                 <class>Triboo_Sales_Model_Resource</class>
+                <entities>
+                    <from_order_status>
+                        <table>triboo_sales_from_order_status</table>
+                    </from_order_status>
+                </entities>
             </triboo_sales_resource>
         </models>
         <blocks>

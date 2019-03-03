@@ -38,4 +38,25 @@
             </triboo_sales_setup>
         </resources>
     </global>
+    <default>
+        <tbflow>
+            <channels>
+                <triboo_sales>
+                    <from>
+                        <type>ftp</type>
+                        <connection>ax</connection>
+                        <format>commaseparated</format>
+                        <localbasedir>ax</localbasedir>
+                        <dir>triboosos</dir>
+                        <incoming>
+                            <order_status>
+                                <pattern>#^[0-9]{3}_TRIBOO_SOS_[0-9]{14,}.csv$#is</pattern>
+                                <type>triboo_sales/from_order_status</type>
+                            </order_status>
+                        </incoming>
+                    </from>
+                </triboo_sales>
+            </channels>
+        </tbflow>
+    </default>
 </config>

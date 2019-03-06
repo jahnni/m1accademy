@@ -17,6 +17,9 @@
                     <from_order_status>
                         <table>triboo_sales_from_order_status</table>
                     </from_order_status>
+                    <to_accademy_order_data>
+                        <table>triboo_sales_to_accademy_order_data</table>
+                    </to_accademy_order_data>
                 </entities>
             </triboo_sales_resource>
         </models>
@@ -55,8 +58,29 @@
                             </order_status>
                         </incoming>
                     </from>
+                    <to>
+                        <type>ftp</type>
+                        <connection>ax</connection>
+                        <format>commaseparated</format>
+                        <localbasedir>ax</localbasedir>
+                        <dir>triboosos</dir>
+                    </to>
                 </triboo_sales>
             </channels>
+            <order_queues>
+                <accademing>
+                    <transitions>
+                        <in>
+                            <from>processing/ax_processing</from>
+                            <to>processing/accademy_sending</to>
+                        </in>
+                        <out>
+                            <from>processing/accademy_sending</from>
+                            <to>processing/accademy_sent</to>
+                        </out>
+                    </transitions>
+                </accademing>
+            </order_queues>
         </tbflow>
     </default>
 </config>

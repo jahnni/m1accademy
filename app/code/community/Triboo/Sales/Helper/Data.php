@@ -7,4 +7,5 @@
  */ 
 class Triboo_Sales_Helper_Data extends Mage_Core_Helper_Abstract {
 
+    const QUEUE_FLOW_TYPE = 'accademing';
 }

@@ -1586,6 +1586,6 @@
 /media/dhl/logo.jpg
 /.htaccess.sample
 vendor
-.idea
-media
 app/etc/local.xml
+media
+.idea
